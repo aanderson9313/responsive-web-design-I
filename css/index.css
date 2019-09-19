@@ -226,7 +226,7 @@ h5 {
   padding-right: 30px;
   font-size: 20px;
   margin-top: 10px;
-  color: white;
+  color: black;
 }
 
 .nav-button:hover {
@@ -236,7 +236,7 @@ h5 {
 
 .logo {
   display: flex;
-  background-color: lightskyblue;
+  background-color: white;
   width: 220px;
   padding-left: 22px;
 
@@ -377,6 +377,33 @@ footer {
 
 /* media queries starts here for page responsiveness*/
   @media (max-width: 800px) {
+    .container {
+      width: 800px;
+      height: auto;
+      
+    }
+  
+    .header {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      
+    }
+
+    #navbar {
+      align-content: center;
+      justify-content: space-around;
+      background-color: white;
+      color: black;
+
+    }
+
+    .logo {
+      margin: auto;
+      align-content: center;
+      justify-content: center;
+    }
+    
     .cta img {
       display: none;
     }
@@ -384,6 +411,21 @@ footer {
       width: 80%;
       align-content: center;
       justify-content: center;
+      margin: 0 auto;
+    }
+    
+  }
+
+  @media (max-width 500px) {
+    .container {
+      width: 500px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
       margin: 0 auto;
     }
   }
